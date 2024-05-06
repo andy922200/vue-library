@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const baseURL = import.meta.env.VITE_BASE_URL
   : undefined
 
 const Router = createRouter({
-  history: createWebHashHistory(baseURL),
+  history: createWebHistory(baseURL),
   linkExactActiveClass: 'active',
   routes,
 })

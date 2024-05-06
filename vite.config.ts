@@ -4,11 +4,13 @@ import legacy from '@vitejs/plugin-legacy'
 import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
 import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
+import UnoCSS from 'unocss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    UnoCSS(),
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
